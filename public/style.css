@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  border-top: 8px hotpink solid;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: 5.5%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 56px;
+  color: hotpink;
+  margin-bottom: 26px;
+  letter-spacing: 1px;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 32px;
+  padding: 15px;
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 3px;
+}
+
+.parent {
+  color: hotpink;
+  background: red;
+}
+.parent:hover {
+  color: white;
+  background: #85c1fc;
+}
+
+.parent span {
+  font-size: 18px;
+  margin-right: 8px;
+  font-weight: bold;
+  line-height: 26px;
+  vertical-align: top;
+}
+.parent svg {
+  max-height: 26px;
+  width: auto;
+  display: inline;
+}
+
+.parent svg path {
+  fill: currentColor;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  border: 2px dashed lightgrey;
+  border-radius: 3px;
+  color: #757575;
+  font-size: 16px;
+  padding: 116px 20px 29px 20px;
+  background-image: url(https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/photo-plus.svg?v=1679861336248);
+  background-size: auto 80px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 26px;
+  cursor: pointer;
+  text-align-last: center;
+}
+
+::-webkit-file-upload-button {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  width: 0px;
+  color: transparent;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: hotpink;
+  color: white;
+  margin-top: 11px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 2px 2px darkgrey;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+footer a {
+  color: #707070;
+  margin: 0px 80px 0px 80px;
+  text-decoration: none;
+  border-bottom: 2px solid #ff69b48f;
+}
+
+.link a {
+  color: #a7a7a7;
+  text-decoration: none;
+  border-bottom: 1px #bbbbbb96 solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.link {
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 15px;
+}
+
+.details {
+  font-size: 14px;
+  line-height: 18px;
+  color: #747474;
+}
+
+.details a {
+  color: hotpink;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px hotpink dashed;
+}
+
+footer a:hover {
+  color: #707070d1;
+  padding-bottom: 1px;
+}
+
+footer {
+  border-top: 1px #dddddd solid;
+  padding-top: 20px;
+  font-size: 15px;
+  margin-top: 4%;
+  padding-bottom: 23px;
+}
+
+.loading-2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  margin: 45px auto 0px auto;
+  color: transparent;
+}
+
+#loading {
+  margin-bottom: 9px;
+  margin-top: 15px;
+  border: 2px dashed lightgray;
+  padding: 64px 9px 63px 9px;
+  border-radius: 3px;
+  width: 450px;
+  background-image: url(https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/sparkles.svg?v=1679866439850);
+  background-size: auto 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wait-txt {
+  display: inline-block;
+  margin-bottom: 47px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: hotpink;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  letter-spacing: 1px;
+  border: 1px solid grey;
+  margin-top: 7px;
+  font-size: 16px;
+  box-shadow: 2px 2px darkgrey;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.circles li {
+  position: fixed;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #ff69b452;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  pointer-events: none;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 10%;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 70%;
+  }
+}
+
+.modal {
+  max-width: fit-content !important;
+  box-shadow: 0px 0px 1px 3px hotpink !important;
+}
+
+.modal p {
+  text-align: left !important;
+  font-size: 15px !important;
+}
+
+.blocker {
+  background-color: rgb(0 0 0 / 50%) !important;
+}
+
+.bottom-div {
+  background: hotpink;
+  height: 9px;
+}
+
+.linkGray {
+  color: #747474 !important;
+  text-decoration: none;
+  border-bottom: 1px hotpink dashed;
+}
+
+.cargando {
+  display: inline-block;
+}
+
+.github-fork-ribbon:before {
+  background-color: #2a2a2a !important;
+}
+
+@media (max-width: 1600px) {
+  main {
+    padding-top: 2.8%;
+  }
+}
+
+@media (max-width: 1366px) {
+  main {
+    padding-top: 1.2% !important;
+  }
+}
+
+/* Glitch Preview */
+@media (max-width: 800px) {
+  footer a {
+    margin: 0px 56px 0px 56px !important;
+  }
+  main {
+    padding-top: 7% !important;
+  }
+}

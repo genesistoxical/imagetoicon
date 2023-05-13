@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert Image to Icon</title>
+    <meta name="description" content="Free Image to Icon Converter" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/file-orientation.png?v=1679876138415"
+      type="image/png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+    />
+  </head>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <body style="font-family: Inter">
+    <a
+      class="github-fork-ribbon"
+      href="https://github.com/genesistoxical/imagetoicon"
+      data-ribbon="View on GitHub"
+      title="View on GitHub"
+      >Fork me on GitHub</a
+    >
+    <main>
+      <header style="font-family: Staatliches">
+        <h1>Convert Image to Icon</h1>
+      </header>
+      <div class="cargando" style="display: none">
+        <p id="loading" class="loading-2">✧</p>
+        <p class="wait-txt">Please wait until the download starts...</p>
+      </div>
+      <form id="form" caction="/" method="post" enctype="multipart/form-data">
+        <input onchange="activatebtn()" id="input" type="file" name="icon" />
+        <button disabled="true" onclick="wait();" id="convert" type="submit">
+          Convert
+        </button>
+      </form>
+      <p class="details" id="details-main">
+        Upload your image (.png .jpg .jpeg .gif or .bmp) without special
+        characters, then click Convert.<br />
+        Please note that if your image is too big, it will take longer to
+        convert.
+      </p>
+      <p class="details" style="display: none" id="details-wait">
+        The download will start when your icon is ready, please be patient and
+        don't refresh this tab.<br />
+        Once your icon is downloaded, you can convert another one by clicking
+        below.
+      </p>
+      <p class="link">
+        <a id="link-main" href="/MIT.html" rel="modal:open"
+          >Made with ♡ under MIT LICENSE</a
+        >
+        <a style="display: none" id="link-wait" onclick="restart()" href="#"
+          >Click here to convert new icon ↻</a
+        >
+      </p>
+    </main>
+    <footer>
+      <a href="https://glitch.com/~imagetoicon" target="_blank" rel="nofollow"
+        >View on Glitch</a
+      >
+      <a href="/about.html" rel="nofollow">About</a>
+      <a
+        href="https://github.com/genesistoxical/imagetoicon"
+        target="_blank"
+        rel="nofollow"
+        >View on Github</a
+      >
+    </footer>
+    <div class="bottom-div">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  </body>
+</html>
