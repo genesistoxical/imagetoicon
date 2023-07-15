@@ -6,7 +6,7 @@ Convert image to icon online. Running on glitch at [https://imagetoicon.glitch.m
 
 - Does not cut or stretch the image.
 - Simple interface, just a few clicks to convert.
-- Supports **.png .jpg .jpeg .gif** or **.bmp**
+- Supports **.png .jpg .jpeg jfif .gif** or **.bmp**
 - Icon in high resolution.
 
 ## Info:

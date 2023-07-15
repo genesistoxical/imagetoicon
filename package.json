@@ -4,13 +4,18 @@
   "description": "Convert PNG to ICO",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "preinstall": "npm-force-resolutions"
   },
   "dependencies": {
     "express": "^4.18.2",
     "image-to-ico": "^1.0.1",
     "jimp": "^0.22.8",
-    "multer": "^1.4.4"
+    "multer": "^1.4.5-lts.1",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "xml2js": "0.5.0"
   },
   "engines": {
     "node": "14.x.x"

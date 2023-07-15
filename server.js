@@ -14,9 +14,31 @@ app.get("/", function (request, res) {
 });
 
 app.post("/", upload.single("icon"), function (req, fs) {
-  console.log(req.file.originalname);
-  var noDot = req.file.originalname.split(".").join("");
-  var name = noDot.substring(0, noDot.length - 3);
+  var file = req.file.originalname;
+  console.log(file);
+  var name = file.substring(0, file.indexOf("."));
+  var ext = file.substring(file.indexOf(".") + 1);
+  console.log("Image format: " + ext);
+
+  var supported =
+    ext.includes("png") ||
+    ext.includes("jpg") ||
+    ext.includes("jpeg") ||
+    ext.includes("jfif") ||
+    ext.includes("gif") ||
+    ext.includes("bmp");
+
+  if (supported === false) {
+    console.log("Unsupported");
+    return fs
+      .status(500)
+      .send(
+        "Error: Unsupported image format (." +
+          ext +
+          "), please reload this tab and try again with a valid file type."
+      );
+  }
+
   Jimp.read(req.file.buffer, (err, image) => {
     if (err) {
       console.log(err);
@@ -45,6 +67,8 @@ app.post("/", upload.single("icon"), function (req, fs) {
         });
       });
   });
+
+  console.log(name + ".ico" + "\n");
 });
 
 var listener = app.listen(process.env.PORT, function () {
