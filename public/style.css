@@ -76,7 +76,7 @@ input {
   border-radius: 3px;
   color: #757575;
   font-size: 16px;
-  padding: 116px 20px 29px 20px;
+  padding: 116px 100px 29px 100px;
   background-image: url(https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/photo-plus.svg?v=1679861336248);
   background-size: auto 80px;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ button {
 }
 
 button:hover {
-  background-color: darkgrey;
+  background-color: #ff78bc;
 }
 
 button:active {
@@ -179,8 +179,8 @@ footer {
   padding: 64px 9px 63px 9px;
   border-radius: 3px;
   width: 450px;
-  background-image: url(https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/sparkles.svg?v=1679866439850);
-  background-size: auto 92px;
+  background-image: url(https://cdn.glitch.global/a10162e3-ee44-4c5c-b75e-a0b0a2a2da7b/photo-plus-spark.svg?v=1689992698745);
+  background-size: auto 80px;
   background-repeat: no-repeat;
   background-position: center;
 }

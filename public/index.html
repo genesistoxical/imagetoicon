@@ -37,7 +37,7 @@
       </header>
       <div class="cargando" style="display: none">
         <p id="loading" class="loading-2">✧</p>
-        <p class="wait-txt">Please wait until the download starts...</p>
+        <p class="wait-txt">Waiting for download...</p>
       </div>
       <form id="form" caction="/" method="post" enctype="multipart/form-data">
         <input onchange="activatebtn()" id="input" type="file" name="icon" />
@@ -52,17 +52,16 @@
         convert.
       </p>
       <p class="details" style="display: none" id="details-wait">
-        The download will start when your icon is ready, please be patient and
-        don't refresh this tab.<br />
-        Once your icon is downloaded, you can convert another one by clicking
-        below.
+        Please wait until the download starts and don't refresh this tab... your
+        icon is almost ready.<br />
+        Once you've downloaded the icon, you can convert more by clicking below.
       </p>
       <p class="link">
         <a id="link-main" href="/MIT.html" rel="modal:open"
           >Made with ♡ under MIT LICENSE</a
         >
         <a style="display: none" id="link-wait" onclick="restart()" href="#"
-          >Click here to convert new icon ↻</a
+          >Click to convert another one ↻</a
         >
       </p>
     </main>

@@ -1,9 +1,5 @@
 // client-side js
 
-function restart() {
-  location.reload();
-}
-
 function wait() {
   $("#form, #details-main, #link-main").hide();
   $("#details-wait, #link-wait, .cargando").show();
