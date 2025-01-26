@@ -1,16 +1,20 @@
-# Image to Icon
+# Image to Icon 🫧
 
-Convert image to icon online. Running on glitch at [https://imagetoicon.glitch.me](https://imagetoicon.glitch.me)
+Convert image to icon online. Running on glitch at [`imagetoicon.glitch.me`](https://imagetoicon.glitch.me)
 
-### Features:
+## Features:
 
 - Does not cut or stretch the image.
 - Simple interface, just a few clicks to convert.
 - Supports **.png .jpg .jpeg .jfif .gif** or **.bmp**
-- Icon in high resolution.
+- High resolution icon.
 
 ## Info:
 
-You can find credits on the [About](https://imagetoicon.glitch.me/about.html) page.
+Credits can be found on the [about](https://imagetoicon.glitch.me/about.html) page.
 
-Image to Icon is under **MIT LICENSE** - Copyright (c) 2023 Génesis Toxical
+**MIT LICENSE** - Copyright (c) 2023 - 2025 Génesis Toxical
+
+<br/>
+
+><sup>There are currently no plans to update **Jimp**, as code changes will be required, but contributions are appreciated.</sup>
