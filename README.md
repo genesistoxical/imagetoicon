@@ -1,20 +1,19 @@
-# Image to Icon 🫧
+<h1 align="center">Image to Icon 🫧</h1>
+<p align="center">Image to Icon is a web app to convert images to icon online.</p>
+<br/>
+<p align="center">
+<a href="#"><img src="assets/Image-to-Icon.png"/></a>
+</p>
 
-Convert image to icon online. Running on glitch at [`imagetoicon.glitch.me`](https://imagetoicon.glitch.me)
-
-## Features:
-
+## Features
 - Does not cut or stretch the image.
 - Simple interface, just a few clicks to convert.
 - Supports **.png .jpg .jpeg .jfif .gif** or **.bmp**
 - High resolution icon.
 
-## Info:
-
-Credits can be found on the [about](https://imagetoicon.glitch.me/about.html) page.
-
-**MIT LICENSE** - Copyright (c) 2023 - 2025 Génesis Toxical
-
 <br/>
 
-><sup>There are currently no plans to update **Jimp**, as code changes will be required, but contributions are appreciated.</sup>
+## Info
+Credits can be found on the [about](https://genesistoxical.github.io/imagetoicon/about.html) page.
+
+**MIT LICENSE** - Copyright (c) 2023 - 2025 Génesis Toxical
