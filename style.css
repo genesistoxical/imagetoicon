@@ -306,6 +306,11 @@ footer {
   background-color: #2a2a2a !important;
 }
 
+::selection {
+    background: hotpink;
+    color: white;
+}
+
 @media (max-width: 1600px) {
   main {
     padding-top: 2.8%;
