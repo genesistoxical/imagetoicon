@@ -115,11 +115,15 @@ async function createICO(img)
   });
   
   const blob = new Blob([ico], { type: 'image/icon' });
-  const link = document.createElement('a');
-  const name = imageInput.value.substring(0, imageInput.value.indexOf("."));
+  const link = document.createElement('a');  
+  const fileName = imageInput.files[0].name;
+  const name = fileName.replace(/\.[^/.]+$/, "");
+  const url = URL.createObjectURL(blob);
+  
   link.download = name + '.ico';
-  link.href = URL.createObjectURL(blob);
+  link.href = url;
   link.click();
+  URL.revokeObjectURL(link.href);
   
   imageInput.value = null;
   imageInput.disabled = true;
