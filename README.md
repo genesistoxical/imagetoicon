@@ -16,4 +16,4 @@
 ## Info
 Credits can be found on the [about](https://genesistoxical.github.io/imagetoicon/about.html) page.
 
-**MIT LICENSE** - Copyright (c) 2023 - 2025 Génesis Toxical
+**MIT LICENSE** - Copyright (c) 2023 - 2026 Génesis Toxical
